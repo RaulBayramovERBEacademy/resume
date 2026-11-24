@@ -2,14 +2,23 @@
  * Tüm kişisel bilgiler ve projeler burada.
  * Yeni proje / Drive linki eklemek için yalnızca bu objeyi güncelleyin.
  */
+import render1 from '../images/render1.png'
+import Aduashvili from '../images/Aduashvili.png'
+import avakova from '../images/avakova.png'
+import iremashvili from '../images/iremashvili.png'
+import akaganian from '../images/akaganian.png'
 export const portfolioData = {
   personal: {
     name: 'Raul Bayramov',
-    title: 'Mimar & Dijital Tasarımcı',
-    bio: 'Mimari tasarım, 3D görselleştirme ve yazılım geliştirme alanlarında çalışan bir profesyonelim. Mekân, form ve teknolojiyi birleştirerek net, sürdürülebilir ve kullanıcı odaklı çözümler üretiyorum.',
-    email: 'raul.bayramov@email.com',
-    phone: '+90 555 000 00 00',
-    location: 'İstanbul, Türkiye',
+    title: 'არქიტექტორი',
+    bio: `კომპიუტერული მეცნიერებების მიმართულების სტუდენტი/კურსდამთავრებული არქიტექტურულ სფეროში 1-წლიანი
+სამუშაო გამოცდილებით. ვფლობ Archicad-ს მაღალ დონეზე და დამოუკიდებლად მომზადებული მაქვს 10-ზე მეტი
+არქიტექტურული პროექტი. ვიცი პროექტის მომზადების, მერიის მოთხოვნებთან შესაბამისობისა და მშენებლობის
+ნებართვის მიღებამდე არსებული ძირითადი პროცედურები. ვაერთიანებ არქიტექტურულ, ტექნოლოგიურ და
+ციფრულ უნარებს.`,
+    email: 'raul.bayramov152@gmail.com',
+    phone: '+995 599 06 65 46',
+    location: 'გარდაბანი, საქართველო',
     cvUrl: '#', // CV dosyanızın linki (PDF)
     social: {
       linkedin: 'https://linkedin.com',
@@ -19,49 +28,68 @@ export const portfolioData = {
   },
 
   skills: [
-    'AutoCAD',
-    'Revit',
-    'SketchUp',
-    '3ds Max',
-    'V-Ray',
-    'Photoshop',
-    'Illustrator',
-    'React',
     'JavaScript',
-    'Python',
+    'ICT',
     'Figma',
+    'Archicad',
+    'Gis',
+    'GEECB',
   ],
 
   projects: [
     {
       id: 1,
-      title: 'Konut Kompleksi Konsept Tasarımı',
+      title: '60 -მდე სახლის მშენებლობის პროექტი',
       description:
-        'Kentsel bir parselde sürdürülebilir konut yerleşimi için geliştirilmiş mimari konsept. Kat planları, cephe çalışmaları ve fotogerçekçi 3D renderlar içerir.',
-      category: 'Mimari & 3D',
-      image:
-        'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
-      driveUrl: 'https://drive.google.com/drive/folders/example-konut-kompleksi',
+        'გარდაბნის რაიონში სოფ. გამარჯვება I-ში 60მ²-მდე დამხმარე სათავსოს მოწყობის სამშენებლო დოკუმენტაციის პროექტი.',
+      category: 'არქიტექტურა',
+      image: render1,
+      driveUrl: 'https://drive.google.com/drive/folders/1dmHNyoQ9wd-tKwODS0B1KQqYmhmhh8MG',
     },
+
     {
       id: 2,
-      title: 'Portföy Yönetim Paneli',
+      title: 'ინდივიდუალური საცხოვრებელი სახლის რეკონსტრუქცია(გარდაბნის რაიონი, სოფელი ფოლადაანთ-კარი)',
       description:
-        'Projelerin, dosya linklerinin ve müşteri notlarının tek yerden yönetildiği modern bir web uygulaması. React ve Tailwind ile geliştirildi.',
-      category: 'Yazılım',
+        'წინამდებარე პროექტი ითვალისწინებს გარდაბნის რაიონში, სოფელ ფოლადაანთ კარში არსებული ორსართულიანი ინდივიდუალური საცხოვრებელი სახლის რეკონსტრუქციას.',
+      category: 'არქიტექტურა',
       image:
-        'https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&q=80',
-      driveUrl: 'https://drive.google.com/drive/folders/example-yonetim-paneli',
+          Aduashvili,
+      driveUrl: 'https://drive.google.com/drive/folders/1QunhhzSNqpPjxRrEegWwbGuwXZ6d3t0D?usp=sharing',
     },
     {
       id: 3,
-      title: 'Marka Kimliği & Sunum Paketi',
+      title: 'ინდივიდუალური საცხოვრებელი სახლის მიშენების პროექტი',
       description:
-        'Kurumsal bir stüdyo için logo varyasyonları, tipografi sistemi ve müşteri sunum şablonlarından oluşan kapsamlı bir görsel kimlik seti.',
-      category: 'Diğer',
+        `წინამდებარე პროექტი ითვალისწინებს გარდაბნის მუნიციპალიტეტში, სოფელ გამარჯვებაში ერთსართულიანი ინდივიდუალური
+საცხოვრებელი სახლის მიშენაბას.`,
+      category: 'არქიტექტურა',
       image:
-        'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80',
-      driveUrl: 'https://drive.google.com/drive/folders/example-marka-kimligi',
+        avakova,
+      driveUrl: 'https://drive.google.com/drive/folders/12qSIIU3-ztIVNf2UuXbWiJc89OvVvrb2?usp=sharing',
+    },
+    {
+      id: 4,
+      title: 'ინდივიდუალური საცხოვრებელი სახლის მიშენების პროექტი',
+      description:
+        `პროექტი ითვალისწინებს ქ.რუსთავში XVIII-XIXმიკრო/რაიონის მიმდებარე ტერიტორიაზე(ნაკვეთი 170)
+საკადასტრო კოდი 02.02.02.116 მოქალაქე გიული ირემაშვილის საკუთრებაში არსებულ მიწის ნაკვეთზე ინდივიდუალური საცხოვრებელი სახლის სამშენებლოდ მიწის ნაკვეთის პირობების დადგენის პროექტს`,
+      category: 'არქიტექტურა',
+      image:
+        iremashvili,
+      driveUrl: 'https://drive.google.com/drive/folders/1MXz-1g0FSEpbrGCSnsetidMjbDl2LKL7?usp=sharing',
+    },
+    {
+      id: 5,
+      title: 'სტომატოლოგიური კლინიკა „ედიდენტი“ (EDIDENT)',
+      description:
+        `პროექტის დასახელება: შენობა-ნაგებობის ფასადზე მცირე ზომის არქიტექტურული ელემენტების, კონსტრუქციების და ტექნიკური საშუალებების
+მოწყობა ან დემონტაჟი
+ობიექტის ფუნქცია: სტომატოლოგიური კლინიკა „ედიდენტი“ (EDIDENT)`,
+      category: 'არქიტექტურა',
+      image:
+        akaganian,
+      driveUrl: 'https://drive.google.com/drive/folders/1ReH_d48GLlYze6IHPcHrE8w45qe2xpQo?usp=sharing',
     },
   ],
 }
