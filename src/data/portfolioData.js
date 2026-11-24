@@ -7,6 +7,7 @@ import Aduashvili from '../images/Aduashvili.png'
 import avakova from '../images/avakova.png'
 import iremashvili from '../images/iremashvili.png'
 import akaganian from '../images/akaganian.png'
+import evakucation from '../images/evakucation.png'
 export const portfolioData = {
   personal: {
     name: 'Raul Bayramov',
@@ -91,5 +92,14 @@ export const portfolioData = {
         akaganian,
       driveUrl: 'https://drive.google.com/drive/folders/1ReH_d48GLlYze6IHPcHrE8w45qe2xpQo?usp=sharing',
     },
+    {id: 6,
+      title: 'ევაკუაციის ნახაზი',
+      description:
+        `ქალაქ თბილისში, შპს პოსტრედისთვის შენობის ევაკუაციის ნახაზი`,
+      category: 'არქიტექტურა',
+      image:
+        evakucation,
+      driveUrl: 'https://drive.google.com/drive/folders/135bWqYsfiW0rZytI0gt11s686d2doFma?usp=sharing',
+    }
   ],
 }
