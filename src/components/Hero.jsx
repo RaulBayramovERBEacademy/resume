@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Download, Link2, Code2, Palette } from 'lucide-react'
+import { Mail, Phone, MapPin, Download, Link2, Code2 } from 'lucide-react'
 
 export default function Hero({ personal, skills }) {
   const socialItems = [
@@ -11,11 +11,6 @@ export default function Hero({ personal, skills }) {
       href: personal.social.github,
       label: 'GitHub',
       icon: Code2,
-    },
-    personal.social?.behance && {
-      href: personal.social.behance,
-      label: 'Behance',
-      icon: Palette,
     },
   ].filter(Boolean)
 

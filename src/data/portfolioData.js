@@ -16,15 +16,14 @@ export const portfolioData = {
 არქიტექტურული პროექტი. ვიცი პროექტის მომზადების, მერიის მოთხოვნებთან შესაბამისობისა და მშენებლობის
 ნებართვის მიღებამდე არსებული ძირითადი პროცედურები. ვაერთიანებ არქიტექტურულ, ტექნოლოგიურ და
 ციფრულ უნარებს.`,
-    email: 'raul.bayramov152@gmail.com',
+    email: 'raulbayramov152@gmail.com',
     phone: '+995 599 06 65 46',
     location: 'გარდაბანი, საქართველო',
     cvUrl: '/Raul_Bayramov_CV.pdf',
     cvFileName: 'Raul_Bayramov_CV.pdf',
     social: {
       linkedin: 'https://linkedin.com',
-      github: 'https://github.com',
-      behance: 'https://behance.net',
+      github: 'https://github.com/RaulBayramovERBEacademy',
     },
   },
 
