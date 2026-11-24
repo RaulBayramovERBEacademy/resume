@@ -1,5 +1,9 @@
 import { Mail, Phone, MapPin, Download, Link2, Code2 } from 'lucide-react'
 
+function gmailComposeUrl(email) {
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`
+}
+
 export default function Hero({ personal, skills }) {
   const socialItems = [
     personal.social?.linkedin && {
@@ -13,6 +17,8 @@ export default function Hero({ personal, skills }) {
       icon: Code2,
     },
   ].filter(Boolean)
+
+  const emailHref = gmailComposeUrl(personal.email)
 
   return (
     <section id="shesakheb" className="hero-atmosphere pt-28 md:pt-32">
@@ -39,7 +45,9 @@ export default function Hero({ personal, skills }) {
               </span>
             )}
             <a
-              href={`mailto:${personal.email}`}
+              href={emailHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 transition-colors hover:text-accent"
             >
               <Mail size={15} className="text-accent" />
@@ -56,7 +64,9 @@ export default function Hero({ personal, skills }) {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={`mailto:${personal.email}`}
+              href={emailHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-soft"
             >
               <Mail size={16} />
