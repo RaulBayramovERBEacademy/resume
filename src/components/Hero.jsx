@@ -20,11 +20,11 @@ export default function Hero({ personal, skills }) {
   ].filter(Boolean)
 
   return (
-    <section id="hakkimda" className="hero-atmosphere pt-28 md:pt-32">
+    <section id="shesakheb" className="hero-atmosphere pt-28 md:pt-32">
       <div className="mx-auto max-w-6xl px-5 pb-16 md:px-8 md:pb-24">
         <div className="animate-fade-up max-w-3xl">
-          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-accent">
-            Kişisel Portföy
+          <p className="mb-3 text-xs font-semibold tracking-[0.18em] text-accent">
+            პერსონალური პორტფოლიო
           </p>
           <h1 className="font-display text-4xl font-semibold leading-[1.1] tracking-tight text-ink sm:text-5xl md:text-6xl">
             {personal.name}
@@ -65,7 +65,7 @@ export default function Hero({ personal, skills }) {
               className="inline-flex items-center gap-2 rounded-md bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-soft"
             >
               <Mail size={16} />
-              E-posta Gönder
+              ელფოსტის გაგზავნა
             </a>
             {personal.cvUrl && personal.cvUrl !== '#' && (
               <a
@@ -75,7 +75,7 @@ export default function Hero({ personal, skills }) {
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/30 hover:shadow-sm"
               >
                 <Download size={16} />
-                CV İndir
+                CV-ის ჩამოტვირთვა
               </a>
             )}
             {personal.cvUrl === '#' && (
@@ -83,10 +83,10 @@ export default function Hero({ personal, skills }) {
                 href={personal.cvUrl}
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/30 hover:shadow-sm"
                 onClick={(e) => e.preventDefault()}
-                title="CV linkini portfolioData içinde güncelleyin"
+                title="განაახლეთ CV ბმული portfolioData-ში"
               >
                 <Download size={16} />
-                CV İndir
+                CV-ის ჩამოტვირთვა
               </a>
             )}
             {socialItems.map((item) => {
@@ -108,8 +108,8 @@ export default function Hero({ personal, skills }) {
         </div>
 
         <div className="animate-fade-up mt-12 border-t border-line pt-10" style={{ animationDelay: '120ms' }}>
-          <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink-muted">
-            Teknik Yetkinlikler
+          <h2 className="text-sm font-semibold tracking-[0.14em] text-ink-muted">
+            ტექნიკური უნარები
           </h2>
           <ul className="mt-4 flex flex-wrap gap-2">
             {skills.map((skill) => (

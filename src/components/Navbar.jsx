@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import { Menu, X } from 'lucide-react'
 
 const links = [
-  { href: '#hakkimda', label: 'Hakkımda' },
-  { href: '#projeler', label: 'Projeler' },
-  { href: '#iletisim', label: 'İletişim' },
+  { href: '#shesakheb', label: 'ჩემს შესახებ' },
+  { href: '#proeqtebi', label: 'პროექტები' },
+  { href: '#kontaqti', label: 'კონტაქტი' },
 ]
 
 export default function Navbar({ name, title }) {
@@ -59,7 +59,7 @@ export default function Navbar({ name, title }) {
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-line bg-white text-ink md:hidden"
-          aria-label={open ? 'Menüyü kapat' : 'Menüyü aç'}
+          aria-label={open ? 'მენიუს დახურვა' : 'მენიუს გახსნა'}
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
         >

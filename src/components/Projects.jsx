@@ -1,36 +1,38 @@
 import { useMemo, useState } from 'react'
 import { HardDrive, Expand } from 'lucide-react'
 
+const ALL = 'ყველა'
+
 export default function Projects({ projects, onOpenLightbox }) {
   const categories = useMemo(() => {
     const unique = [...new Set(projects.map((p) => p.category))]
-    return ['Tümü', ...unique]
+    return [ALL, ...unique]
   }, [projects])
 
-  const [active, setActive] = useState('Tümü')
+  const [active, setActive] = useState(ALL)
 
   const filtered =
-    active === 'Tümü'
+    active === ALL
       ? projects
       : projects.filter((p) => p.category === active)
 
   return (
-    <section id="projeler" className="border-t border-line bg-canvas py-16 md:py-24">
+    <section id="proeqtebi" className="border-t border-line bg-canvas py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="max-w-2xl">
           <h2 className="font-display text-3xl font-semibold tracking-tight text-ink md:text-4xl">
-            Proje Kataloğu
+            პროექტების კატალოგი
           </h2>
           <p className="mt-3 text-base text-ink-muted">
-            Seçili çalışmalar. Her projenin dosyalarına Google Drive üzerinden
-            ulaşabilirsiniz.
+            შერჩეული ნამუშევრები. თითოეული პროექტის ფაილებს Google Drive-ზე
+            შეგიძლიათ ნახოთ.
           </p>
         </div>
 
         <div
           className="mt-8 flex flex-wrap gap-2"
           role="tablist"
-          aria-label="Proje kategorileri"
+          aria-label="პროექტების კატეგორიები"
         >
           {categories.map((category) => {
             const isActive = active === category
@@ -63,7 +65,7 @@ export default function Projects({ projects, onOpenLightbox }) {
                 type="button"
                 className="relative aspect-video w-full overflow-hidden bg-line text-left"
                 onClick={() => onOpenLightbox(project)}
-                aria-label={`${project.title} görselini büyüt`}
+                aria-label={`${project.title} — სურათის გადიდება`}
               >
                 <img
                   src={project.image}
@@ -74,13 +76,13 @@ export default function Projects({ projects, onOpenLightbox }) {
                 <span className="absolute inset-0 flex items-center justify-center bg-ink/0 opacity-0 transition-all duration-300 group-hover:bg-ink/25 group-hover:opacity-100">
                   <span className="inline-flex items-center gap-1.5 rounded-md bg-white/95 px-3 py-1.5 text-xs font-semibold text-ink shadow-sm">
                     <Expand size={14} />
-                    Büyüt
+                    გადიდება
                   </span>
                 </span>
               </button>
 
               <div className="flex flex-1 flex-col p-5">
-                <span className="text-xs font-semibold uppercase tracking-[0.12em] text-ink-muted">
+                <span className="text-xs font-semibold tracking-[0.12em] text-ink-muted">
                   {project.category}
                 </span>
                 <h3 className="mt-2 text-lg font-bold tracking-tight text-ink">
@@ -97,7 +99,7 @@ export default function Projects({ projects, onOpenLightbox }) {
                   className="mt-5 inline-flex items-center justify-center gap-2 rounded-md border border-accent/15 bg-accent px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent-soft"
                 >
                   <HardDrive size={16} />
-                  Google Drive&apos;da İncele
+                  Google Drive-ზე ნახვა
                 </a>
               </div>
             </article>
@@ -106,7 +108,7 @@ export default function Projects({ projects, onOpenLightbox }) {
 
         {filtered.length === 0 && (
           <p className="mt-10 text-sm text-ink-muted">
-            Bu kategoride henüz proje yok.
+            ამ კატეგორიაში პროექტები ჯერ არ არის.
           </p>
         )}
       </div>

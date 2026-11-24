@@ -2,16 +2,16 @@ import { Mail, Phone, MapPin } from 'lucide-react'
 
 export default function Contact({ personal }) {
   return (
-    <section id="iletisim" className="border-t border-line bg-white py-16 md:py-24">
+    <section id="kontaqti" className="border-t border-line bg-white py-16 md:py-24">
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <div className="grid gap-10 md:grid-cols-[1.2fr_1fr] md:items-end">
           <div>
             <h2 className="font-display text-3xl font-semibold tracking-tight text-ink md:text-4xl">
-              İletişim
+              კონტაქტი
             </h2>
             <p className="mt-3 max-w-xl text-base text-ink-muted">
-              Yeni bir proje, iş birliği veya soru için bana doğrudan
-              ulaşabilirsiniz.
+              ახალი პროექტის, თანამშრომლობის ან კითხვის შემთხვევაში
+              დამიკავშირდით პირდაპირ.
             </p>
           </div>
 

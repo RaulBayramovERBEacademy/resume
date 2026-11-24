@@ -31,7 +31,7 @@ export default function Lightbox({ project, onClose }) {
       <button
         type="button"
         className="absolute right-4 top-4 inline-flex h-10 w-10 items-center justify-center rounded-md bg-white/95 text-ink shadow-sm transition-colors hover:bg-white"
-        aria-label="Kapat"
+        aria-label="დახურვა"
         onClick={onClose}
       >
         <X size={18} />
