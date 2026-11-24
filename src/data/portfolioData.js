@@ -19,7 +19,8 @@ export const portfolioData = {
     email: 'raul.bayramov152@gmail.com',
     phone: '+995 599 06 65 46',
     location: 'გარდაბანი, საქართველო',
-    cvUrl: '#', // CV dosyanızın linki (PDF)
+    cvUrl: '/Raul_Bayramov_CV.pdf',
+    cvFileName: 'Raul_Bayramov_CV.pdf',
     social: {
       linkedin: 'https://linkedin.com',
       github: 'https://github.com',

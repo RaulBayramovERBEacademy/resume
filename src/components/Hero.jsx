@@ -70,20 +70,8 @@ export default function Hero({ personal, skills }) {
             {personal.cvUrl && personal.cvUrl !== '#' && (
               <a
                 href={personal.cvUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                download={personal.cvFileName || 'Raul_Bayramov_CV.pdf'}
                 className="inline-flex items-center gap-2 rounded-md border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/30 hover:shadow-sm"
-              >
-                <Download size={16} />
-                CV-ის ჩამოტვირთვა
-              </a>
-            )}
-            {personal.cvUrl === '#' && (
-              <a
-                href={personal.cvUrl}
-                className="inline-flex items-center gap-2 rounded-md border border-line bg-white px-4 py-2.5 text-sm font-semibold text-ink transition-all hover:border-accent/30 hover:shadow-sm"
-                onClick={(e) => e.preventDefault()}
-                title="განაახლეთ CV ბმული portfolioData-ში"
               >
                 <Download size={16} />
                 CV-ის ჩამოტვირთვა
